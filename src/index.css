@@ -1,3 +1,31 @@
+:root {
+  --body_background: white;
+  --body_color: black;
+  --navigation_background: #282c34;
+  --navigation_color: white;
+  --footer_background: #282c34;
+  --footer_color: white;
+  --button_background: black;
+  --button_color: white;
+  --link_color: navy;
+}
+
+[data-theme="dark"] {
+  --body_background: #282c34;
+  --body_color: white;
+  --navigation_background: white;
+  --navigation_color: #282c34;
+  --footer_background: white;
+  --footer_color: #282c34;
+  --button_background: white;
+  --button_color: black;
+  --link_color: cyan;
+}
+
+* {
+  transition: all 0.3s ease-in-out;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
