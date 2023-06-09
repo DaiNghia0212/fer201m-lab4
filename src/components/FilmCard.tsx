@@ -1,6 +1,13 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import { FilmType } from "../types/FilmType";
-import Modal from "./Modal";
+import {
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Typography,
+} from "@mui/material";
 
 type Props = {
   film: FilmType;
@@ -8,16 +15,37 @@ type Props = {
 
 const FilmCard = (props: Props) => {
   const { film } = props;
+
   return (
-    <div className="card">
-      <img src={film.image} alt={film.title} />
-      <h3 className="title">{film.title}</h3>
-      <p className="nation">{film.nation}</p>
-      <p className="year">{film.year}</p>
-      <Modal title={film.title} description={film.detail}>
-        Detail
-      </Modal>
-    </div>
+    <Card
+      sx={{
+        maxWidth: { xs: 300, sm: 500, md: 400, lg: 350 },
+        borderRadius: "15px",
+        margin: "auto",
+      }}
+    >
+      <CardMedia
+        sx={{ height: { xs: 400, sm: 800, md: 600, lg: 500 } }}
+        image={film.image}
+        title={film.title}
+      />
+      <CardContent>
+        <Typography my="10px" variant="h4" textAlign="center">
+          {film.title}
+        </Typography>
+        <Typography my="10px" variant="h5" textAlign="center">
+          {film.nation}
+        </Typography>
+        <Typography my="10px" variant="h5" textAlign="center">
+          {film.year}
+        </Typography>
+      </CardContent>
+      <CardActions sx={{ justifyContent: "center" }}>
+        <Link to={`/detail/${film.id}`}>
+          <Button variant="contained">Detail</Button>
+        </Link>
+      </CardActions>
+    </Card>
   );
 };
 

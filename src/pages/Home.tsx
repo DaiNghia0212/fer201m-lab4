@@ -1,11 +1,18 @@
-import React from 'react'
+import FilmsList from "../components/FilmsList";
+import { Films as films } from "../data/ListOfFilms";
+import { Container, Typography } from "@mui/material";
 
-type Props = {}
+type Props = {};
 
 const Home = (props: Props) => {
   return (
-    <div>Home</div>
-  )
-}
+    <Container>
+      <Typography variant="h2" textAlign="center" mb="10px">
+        Films
+      </Typography>
+      <FilmsList films={films} />
+    </Container>
+  );
+};
 
-export default Home
+export default Home;

@@ -1,5 +1,5 @@
 export type FilmType = {
-  id: number;
+  id: string;
   title: string;
   nation: string;
   year: string;

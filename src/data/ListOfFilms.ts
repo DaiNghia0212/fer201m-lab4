@@ -1,6 +1,6 @@
 export const Films = [
   {
-    id: 1,
+    id: "1",
     title: "Shazam! Fury of the Gods",
     nation: "USA",
     year: "2023",
@@ -10,7 +10,7 @@ export const Films = [
       "Shazam and his superpowered foster siblings band together to face the Daughters of Atlas, who have stolen the Wizard's staff and plan to use it for their own ends.",
   },
   {
-    id: 2,
+    id: "2",
     title: "The Mother",
     nation: "USA",
     year: "2023",
@@ -20,7 +20,7 @@ export const Films = [
       "While fleeing from dangerous assailants, an assassin comes out of hiding to protect her daughter she left earlier in life.",
   },
   {
-    id: 3,
+    id: "3",
     title: "Mummies",
     nation: "Spain",
     year: "2023",
@@ -30,7 +30,7 @@ export const Films = [
       "It follows three mummies as they end up in present-day London and embark on a journey in search of an old ring belonging to the Royal Family, stolen by the ambitious archaeologist Lord Carnaby.",
   },
   {
-    id: 4,
+    id: "4",
     title: "Narvik",
     nation: "Norway",
     year: "2022",
@@ -40,7 +40,7 @@ export const Films = [
       "In April, 1940, the eyes of the world are on Narvik, a small town in northern Norway, a source of the iron ore needed for Hitler's war machine. Through two months of fierce winter warfare, the German leader is dealt with his first defeat.",
   },
   {
-    id: 5,
+    id: "5",
     title: "Detective Knight: Independence",
     nation: "USA",
     year: "2023",
@@ -50,7 +50,7 @@ export const Films = [
       "Detective James Knight's last-minute assignment to the Independence Day shift turns into a race against time to stop an unbalanced EMT worker who's posing as a cop.",
   },
   {
-    id: 6,
+    id: "6",
     title: "M3GAN",
     nation: "USA",
     year: "2023",
